@@ -1,0 +1,30 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "Abcd1234",
+    "database": "portfolio",
+    "host": "192.168.0.17",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "password",
+    "database": "portfolio",
+    "host": "localhost",
+    "dialect": "postgres",
+    "use_env_variable": "DATABASE_URL",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}
